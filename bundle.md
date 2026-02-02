@@ -3,13 +3,13 @@ bundle:
   name: agent-memory
   version: 1.0.0
   description: Semantic memory system for Amplifier agents with vector similarity search
-  repository: https://github.com/microsoft/amplifier-bundle-agent-memory
+  repository: https://github.com/ramparte/amplifier-bundle-agent-memory
   license: MIT
 
 config:
   tools:
     - module: tool-memory-semantic
-      source: git+https://github.com/microsoft/amplifier-bundle-agent-memory@main#subdirectory=modules/tool-memory-semantic
+      source: git+https://github.com/ramparte/amplifier-bundle-agent-memory@main#subdirectory=modules/tool-memory-semantic
       config:
         # Agent namespace for memory isolation
         agent_id: "{{ session.agent_id | default('default-agent') }}"
@@ -25,7 +25,7 @@ config:
 
 includes:
   # Include context awareness by default
-  - "@agent-memory:context/memory-system-overview.md"
+  - "context/memory-system-overview.md"
 ---
 
 # Agent Memory Bundle
