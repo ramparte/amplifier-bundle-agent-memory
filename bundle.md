@@ -25,7 +25,7 @@ config:
 
 includes:
   # Include context awareness by default
-  - "context/memory-system-overview.md"
+  - "agent-memory:context/memory-system-overview.md"
 ---
 
 # Agent Memory Bundle
